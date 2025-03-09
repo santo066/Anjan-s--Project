@@ -19,6 +19,7 @@ h6 {
         align-items: center;
         justify-content: center;
         gap: 20px;
+
         @media only screen and (max-width: 576px) {
             gap: 15px;
         }
@@ -27,6 +28,7 @@ h6 {
             font-size: 48px;
             color: white;
             line-height: 120%;
+
             @media only screen and (max-width: 576px) {
                 font-size: 28px;
             }
@@ -37,13 +39,16 @@ h6 {
 .main-form-section {
     background-color: #DCE6E3;
     padding: 100px 0;
+
     @media only screen and (max-width: 576px) {
         padding: 60px 20px;
     }
+
     .form-wrapper {
         .form-section-wrapper {
             .single-row-wrapper {
                 margin-bottom: 30px;
+
                 @media only screen and (max-width: 576px) {
                     margin-bottom: 15px;
                 }
@@ -54,6 +59,9 @@ h6 {
                     align-items: start;
                     gap: 10px;
                     padding-right: 10px;
+                    @media only screen and (max-width: 767px) {
+                        margin-bottom: 20px;
+                    }
 
                     @media only screen and (max-width: 576px) {
                         gap: 5px;
@@ -80,13 +88,20 @@ h6 {
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
+
                 @media only screen and (max-width: 576px) {
                     gap: 0px;
                 }
+
                 .single-option-feld {
                     @media only screen and (max-width: 576px) {
-                        margin-bottom:15px;
+                        margin-bottom: 15px;
                     }
+
+                    @media only screen and (max-width: 767px) {
+                        margin-bottom: 20px;
+                    }
+
                     .single-select-tag {
                         padding: 10px;
                         width: 100%;
@@ -100,6 +115,79 @@ h6 {
 
                         .single-option-tag {}
                     }
+                }
+            }
+        }
+
+        .form-bottom-section {
+            margin-top: 40px;
+            border-top: 1px solid black;
+
+            .form-bottom-section-wrapper {
+
+                .form-bottom-left-side-wrapper {
+                    border-right: 1px solid black;
+                    padding-right: 40px;
+                    padding-top: 40px;
+
+                    @media only screen and (max-width: 767px) {
+                        border-right: 0;
+                        padding-right: 20px;
+                        padding-top: 20px;
+                    }
+
+                    .left-side-single-wrapper {
+                        display: flex;
+                        align-items: start;
+                        flex-direction: column;
+                        gap: 15px;
+                        margin-bottom: 30px;
+                        @media only screen and (max-width: 767px) {
+                            margin-bottom: 20px;
+                        }
+
+                        .left-side-single-label {
+                            font-size: 28px;
+
+                            @media only screen and (max-width: 768px) {
+                                font-size: 18px;
+                            }
+                        }
+
+                        .left-side-single-textarea {
+                            width: 90%;
+                            background-color: transparent;
+                            border: 1px solid black;
+                            border-radius: 8px;
+                            padding: 20px;
+
+                            @media only screen and (max-width: 767px) {
+                                width: 100%;
+                            }
+
+                            @media only screen and (max-width: 768px) {
+                                padding: 10px;
+                            }
+                        }
+
+                        .h-300px {
+                            height: 300px;
+
+                            @media only screen and (max-width: 768px) {
+                                height: 200px;
+                            }
+                        }
+
+                        .h-150px {
+                            @media only screen and (max-width: 768px) {
+                                height: 100px;
+                            }
+                        }
+                    }
+                }
+
+                .form-bottom-right-side-wrapper {
+                    padding-top: 40px;
                 }
             }
         }
